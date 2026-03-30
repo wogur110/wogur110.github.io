@@ -191,3 +191,55 @@ span.highlight {
   opacity: 0.8;
 }
 
+/* ── Mobile layout ── */
+@media screen and (max-width: 768px) {
+
+  /* Profile section: photo on top, bio below */
+  tr.profile-row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  td.profile-bio {
+    width: 100% !important;
+    padding: 10px 4% !important;
+    box-sizing: border-box;
+  }
+
+  td.profile-photo {
+    width: 50% !important;
+    max-width: 180px;
+    padding: 20px 10px 5px !important;
+  }
+
+  /* Paper / project rows: thumbnail on top, text below */
+  tr.paper-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  td.paper-img-cell {
+    width: 100% !important;
+    text-align: center;
+    padding: 20px 10px 5px !important;
+  }
+
+  td.paper-desc-cell {
+    width: 100% !important;
+    padding: 5px 10px 20px !important;
+    box-sizing: border-box;
+  }
+
+  /* Shrink name heading slightly */
+  .name {
+    font-size: 26px;
+  }
+
+  /* Full-width container on small screens */
+  table {
+    width: 100% !important;
+  }
+}
+
