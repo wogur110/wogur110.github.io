@@ -1,302 +1,301 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
+/* ─── Minimal theme base (orderedlist/minimal) + academic customizations ─── */
+
+body {
+  background-color: #fff;
+  padding: 50px;
+  font: 14px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial,
+        sans-serif;
+  color: #595959;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-a {
-  color: #1772d0;
-  text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin: 0 0 14px;
 }
 
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
+p, ul, ol, table, pre, dl {
+  margin: 0 0 16px;
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-}
+h1, h2, h3 { line-height: 1.2; }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-}
+h1 { font-size: 24px; font-weight: 600; }
+h2 { font-size: 18px; color: #393939; font-weight: 500; }
+h3 { font-size: 14px; color: #333;    font-weight: 600; }
 
-h2 {
+a { color: #39c; text-decoration: none; }
+a:hover { color: #069; }
+
+strong { color: #222; font-weight: 600; }
+
+small { font-size: 11px; }
+
+blockquote {
+  border-left: 1px solid #e5e5e5;
   margin: 0;
-  font-weight: normal;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  padding: 0 0 0 20px;
+  font-style: italic;
 }
+
+code, pre {
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal,
+               Consolas, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
+  color: #333;
+}
+
+pre {
+  padding: 8px 15px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+th { color: #444; }
+
+img { max-width: 100%; }
+
+hr {
+  border: 0;
+  background: #e5e5e5;
+  height: 1px;
+  margin: 28px 0;
+}
+
+/* ─── Layout ─── */
+
+.wrapper {
+  width: 970px;
+  margin: 0 auto;
+}
+
+/* ─── Sidebar (header) ─── */
+
+header {
+  width: 220px;
+  float: left;
+  position: fixed;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+header h1 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+header > p {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.profile-photo {
+  width: 170px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 16px;
+  transition: transform 0.2s;
+}
+
+.profile-photo:hover { transform: scale(1.03); }
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-links li { margin-bottom: 5px; }
+
+.contact-links a {
+  font-size: 13px;
+  color: #595959;
+}
+
+.contact-links a:hover { color: #39c; }
+
+/* ─── Main content (section) ─── */
+
+section {
+  width: 690px;
+  float: right;
+  padding-bottom: 60px;
+}
+
+/* ─── Footer ─── */
+
+footer {
+  width: 220px;
+  float: left;
+  position: fixed;
+  bottom: 50px;
+  font-size: 11px;
+  color: #aaa;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+footer p { margin: 0; }
+footer a { color: #aaa; }
+footer a:hover { color: #39c; }
+
+/* ─── Date badge in h3 headings ─── */
+
+.date {
+  float: right;
+  font-weight: 400;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* ─── Paper / project entries ─── */
+
+.paper-entry {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 28px;
+  align-items: flex-start;
+}
+
+.paper-img img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.paper-info { flex: 1; min-width: 0; }
 
 .papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
+  color: #222;
 }
 
-.name {
-  padding-top: 20px;
-  margin: 0;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+.paper-desc {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #666;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
+/* ─── BibTeX toggle ─── */
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-/* Image Modal/Lightbox */
-.image-modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.9);
-  cursor: pointer;
-}
-
-.image-modal-content {
-  margin: auto;
-  display: block;
-  width: 800px;
-  height: 600px;
-  object-fit: contain;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: zoom 0.3s;
-  z-index: 10000;
-}
-
-@keyframes zoom {
-  from {transform: scale(0.5)}
-  to {transform: scale(1)}
-}
-
-.image-modal-close {
-  position: fixed;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 10000;
-}
-
-.image-modal-close:hover,
-.image-modal-close:focus {
-  color: #bbb;
-  text-decoration: none;
-}
-.image-clickable {
-  cursor: pointer;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.image-clickable:hover {
-  opacity: 0.8;
-}
-
-/* ── BibTeX toggle button (inline with links) ── */
 .bibtex-toggle {
   background: none;
   border: none;
-  padding: 0;
-  margin: 0;
-  color: #1772d0;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  color: #39c;
+  font-size: 13px;
   cursor: pointer;
+  padding: 0;
+  font-family: inherit;
 }
 
-.bibtex-toggle:hover {
-  color: #f09228;
-}
+.bibtex-toggle:hover { color: #069; }
 
-/* ── BibTeX collapsible block ── */
 .bibtex-block {
   display: none;
   position: relative;
   background: #f8f8f8;
-  border: 1px solid #ddd;
+  border: 1px solid #e5e5e5;
   border-radius: 4px;
-  padding: 10px 12px;
-  margin-bottom: 6px;
+  padding: 10px 40px 10px 12px;
+  margin-top: 8px;
 }
 
-.bibtex-block.active {
-  display: block;
-}
+.bibtex-block.active { display: block; }
 
 .bibtex-block pre {
-  margin: 0;
-  font-size: 12px;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
   white-space: pre-wrap;
-  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
   color: #333;
+  overflow-x: visible;
 }
 
 .bibtex-copy {
   position: absolute;
-  top: 8px;
+  top: 6px;
   right: 8px;
   background: #fff;
   border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 2px 8px;
   font-size: 11px;
+  border-radius: 3px;
   cursor: pointer;
-  color: #555;
+  padding: 2px 6px;
 }
 
-.bibtex-copy:hover {
-  background: #eee;
-}
+.bibtex-copy:hover { background: #f0f0f0; }
 
-/* ── Mobile layout ── */
-@media screen and (max-width: 768px) {
+/* ─── Responsive: tablet ─── */
 
-  /* Profile section: photo on top, bio below */
-  tr.profile-row {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+@media print, screen and (max-width: 960px) {
+  .wrapper { width: auto; margin: 0; }
+
+  header, section, footer {
+    float: none;
+    position: static;
+    width: auto;
   }
 
-  td.profile-bio {
-    width: 100% !important;
-    padding: 10px 4% !important;
-    box-sizing: border-box;
-  }
-
-  td.profile-photo {
-    width: 50% !important;
-    max-width: 180px;
-    padding: 20px 10px 5px !important;
-  }
-
-  /* Paper / project rows: thumbnail on top, text below */
-  tr.paper-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  td.paper-img-cell {
-    width: 100% !important;
+  header {
     text-align: center;
-    padding: 20px 10px 5px !important;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
   }
 
-  td.paper-desc-cell {
-    width: 100% !important;
-    padding: 5px 10px 20px !important;
-    box-sizing: border-box;
+  .profile-photo { width: 130px; }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
   }
 
-  /* Shrink name heading slightly */
-  .name {
-    font-size: 26px;
+  footer {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 12px;
+    margin-top: 20px;
+    text-align: center;
   }
 
-  /* Full-width container on small screens */
-  table {
-    width: 100% !important;
+  .date { float: none; display: block; }
+}
+
+/* ─── Responsive: mobile ─── */
+
+@media screen and (max-width: 600px) {
+  body { padding: 20px; }
+
+  .paper-entry { flex-direction: column; }
+
+  .paper-img img {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
   }
 }
 
+@media print {
+  body { padding: 0.4in; font-size: 12pt; color: #444; }
+  header { position: static; }
+  footer { position: static; }
+}
