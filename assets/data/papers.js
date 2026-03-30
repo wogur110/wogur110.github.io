@@ -169,6 +169,7 @@ const PAPERS = [
 // ─────────────────────────────────────────────────────────────────────────────
 
 const PROJECTS = [
+  /* hidden: SNU FastMRI Challenge
   {
     image:        "assets/images/05_fastmri/fastmri_320.png",
     imageAlt:     "FastMRI Challenge Teaser",
@@ -191,4 +192,5 @@ const PROJECTS = [
       "Served as the contest coordinator for the 2023 competition, evaluating and analyzing the participants' models.",
     ],
   },
+  */ // end hidden: SNU FastMRI Challenge
 ];
