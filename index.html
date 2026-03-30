@@ -7,7 +7,7 @@
 
     <meta name="author" content="Jaehyeok Bae">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Jaehyeok Bae is a Ph.D. student at Stanford University working on AI for Medical Imaging.">
+    <meta name="description" content="Jaehyeok Bae is a Ph.D. candidate at Stanford University working on AI for Medical Imaging.">
 
     <link rel="shortcut icon" href="assets/images/light_bulb/light_bulb-64x64.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -112,6 +112,23 @@
     <!-- ── Render papers and projects from data ── -->
     <script src="assets/data/papers.js"></script>
     <script>
+      function escapeHtml(str) {
+        return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      }
+
+      function toggleBibtex(id) {
+        document.getElementById('bibtex-' + id).classList.toggle('active');
+      }
+
+      function copyBibtex(id) {
+        const pre = document.querySelector('#bibtex-' + id + ' pre');
+        navigator.clipboard.writeText(pre.textContent).then(() => {
+          const btn = document.querySelector('#bibtex-' + id + ' .bibtex-copy');
+          btn.textContent = 'Copied!';
+          setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
+        });
+      }
+
       function renderAuthor(a) {
         const name = a.equalContrib ? `${a.name}*` : a.name;
         if (a.self) return `<strong>${name}</strong>`;
@@ -119,12 +136,22 @@
         return name;
       }
 
-      function renderRow(item) {
+      function renderRow(item, id) {
         const authors = item.authors.map(renderAuthor).join(',\n                ');
 
         const links = item.links
           .map(l => `<a href="${l.url}" target="_blank">${l.text}</a>`)
           .join('\n                /\n                ');
+
+        const bibtexBtn = item.bibtex
+          ? `\n                / <button class="bibtex-toggle" onclick="toggleBibtex('${id}')">bibtex</button>`
+          : '';
+
+        const bibtexBlock = item.bibtex ? `
+                <div id="bibtex-${id}" class="bibtex-block">
+                  <button class="bibtex-copy" onclick="copyBibtex('${id}')">Copy</button>
+                  <pre>${escapeHtml(item.bibtex)}</pre>
+                </div>` : '';
 
         const imgEl = item.imageFullUrl
           ? `<a href="${item.imageFullUrl}" target="_blank"><img src="${item.image}" alt="${item.imageAlt}" width="160" height="160" class="hoverZoomLink"></a>`
@@ -146,15 +173,16 @@
                 <br>
                 ${item.venue}
                 <br>
-                ${links}
+                ${links}${bibtexBtn}
                 <p></p>
+                ${bibtexBlock}
                 ${desc}
               </td>
             </tr>`;
       }
 
-      document.getElementById('papers-tbody').innerHTML   = PAPERS.map(renderRow).join('');
-      document.getElementById('projects-tbody').innerHTML = PROJECTS.map(renderRow).join('');
+      document.getElementById('papers-tbody').innerHTML   = PAPERS.map((item, i) => renderRow(item, 'paper-' + i)).join('');
+      document.getElementById('projects-tbody').innerHTML = PROJECTS.map((item, i) => renderRow(item, 'project-' + i)).join('');
     </script>
   </body>
 </html>
