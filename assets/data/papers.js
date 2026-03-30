@@ -136,7 +136,7 @@ const PAPERS = [
     image:    "assets/images/02_nimagenet/nimagenet_320.png",
     imageAlt: "N-ImageNet Teaser",
     title:    "N-ImageNet: Towards robust, fine-grained object recognition with event cameras",
-    titleUrl: "https://openaccess.thecvf.com/content/ICCV2021/html/Kim_N-ImageNet_Towards_Robust_Fine-Grained_Object_Recognition_With_Event_Cameras_ICCV_2021_paper.html",
+    titleUrl: "https://82magnolia.github.io/n_imagenet/",
     authors: [
       { name: "Junho Kim",    url: "https://scholar.google.com/citations?user=u1Sz3YMAAAAJ" },
       { name: "Jaehyeok Bae", self: true },
