@@ -16,7 +16,41 @@
 
 const PAPERS = [
   {
-    image:    "assets/images/06_quicksamp/quicksamp_320.png",
+    image:    "assets/images/09_AdaSamp/AdaSamp_640.png",
+    imageAlt: "AdaSamp Teaser",
+    title:    "AdaSamp: Towards simple, subject-specific Adaptive Sampling for 3D Accelerated MRI",
+    //titleUrl: "", // not yet available, will update when the paper is online
+    authors: [
+      { name: "Jaehyeok Bae",      self: true },
+      { name: "Zachary Shah",       url: "https://www.zacharyshah.me/" },
+      { name: "Cagan Alkan",        url: "https://scholar.google.com/citations?hl=en&user=IpQzwWIAAAAJ" },
+      { name: "Shreyas Vasanawala", url: "https://scholar.google.com/citations?hl=en&user=n9mOA2IAAAAJ" },
+      { name: "John M. Pauly",      url: "https://scholar.google.com/citations?hl=en&user=Fc6GIIQAAAAJ" },
+      { name: "Kawin Setsompop",    url: "https://scholar.google.com/citations?hl=en&user=bYDAyV4AAAAJ" },
+    ],
+    venue: "International Society for Magnetic Resonance in Medicine (<strong>ISMRM</strong>), 2026 <strong>(SUMMA CUM LAUDE)</strong>",
+    links: [
+      { text: "abstract", url: "https://drive.google.com/file/d/1COP1iRV80miilIIeWyOFGEIdy1h1JRgT/view?usp=drive_link" },
+      { text: "presentation", url: "https://drive.google.com/file/d/10zudv_mrAkgkqZz-odIlSSWskPzb5vgN/view?usp=drive_link" },
+    ],
+    bibtex: `@inproceedings{Bae2026_e76f8898,
+  title = {AdaSamp: Towards simple, subject-specific Adaptive Sampling for 3D Accelerated MRI},
+  author = {Bae, Jaehyeok and Shah, Zachary and Alkan, Cagan and Vasanawala, Shreyas and Pauly, John and Setsompop, Kawin},
+  booktitle = {Cape Town - 2026 ISMRM-ISMRT Annual Meeting and Exhibition},
+  year = {2026},
+  month = {May},
+  address = {Cape Town, South Africa},
+  organization = {ISMRM},
+  note = {Program Number: 503-03-003},
+  url = {http://echo.ismrm.org/abstracts/view/e76f8898-4832-4607-8a4e-e28fcbd3fcfe}
+}`,
+    description: [
+      "AdaSamp generates a simple, subject-specific sampling mask guided by a fast scout image, tailoring k-space coverage to each patient’s spatial support and anatomical anisotropy. It outperforms population-based sampling masks in reconstruction quality and streamlines the practical deployment of subject-adaptive 3D MRI across diverse anatomies.",
+    ],
+  },
+
+  {
+    image:    "assets/images/06_quicksamp/quicksamp_640.png",
     imageAlt: "QuickSamp Teaser",
     title:    "QuickSamp: Towards simple, real-time-optimized Sampling Patterns for 3D Accelerated MRI",
     titleUrl: "https://archive.ismrm.org/2025/1367.html",
@@ -29,20 +63,56 @@ const PAPERS = [
     ],
     venue: "International Society for Magnetic Resonance in Medicine (<strong>ISMRM</strong>), 2025 <strong>(MAGNA CUM LAUDE)</strong>",
     links: [
-      { text: "abstract",     url: "https://drive.google.com/file/d/1EQy3WMqub1dQiBN6MyubxA1bR4Zp2lfA/view?usp=drive_link" },
-      { text: "presentation", url: "https://drive.google.com/file/d/1y24kWiYPd6gD6vEEKtZvfU80Wyl1uTNG/view?usp=drive_link" },
+      { text: "abstract",     url: "https://drive.google.com/file/d/1Xbe7qoZWoTBt83VqEkphh9CZGbWJn-zg/view?usp=drive_link" },
+      { text: "presentation", url: "https://drive.google.com/file/d/1PTNLpxBIrNK3CkQVz__jCO3BfqJ3Iear/view?usp=drive_link" },
     ],
     bibtex: `@article{baequicksamp,
   title  = {QuickSamp: Towards simple, real-time-optimized Sampling Patterns for 3D Accelerated MRI},
   author = {Bae, Jaehyeok and Alkan, Cagan and Vasanawala, Shreyas and Pauly, John M and Setsompop, Kawin}
 }`,
     description: [
-      "Our method simplifies the complexity and drastically improve the speed of sampling pattern generation using only a few parameters. This eliminates extensive retraining, offering a practical alternative for optimizing MRI acquisition across different configurations and use cases.",
+      "QuickSamp reduces complexity and drastically improves the speed of sampling pattern generation using only a few parameters. This eliminates extensive retraining, offering a practical alternative for optimizing MRI acquisition across different configurations and use cases.",
     ],
   },
 
   {
-    image:    "assets/images/07_nstm/nstm_320.png",
+    image:    "assets/images/08_3d-lldm/3D-LLDM_640.png",
+    imageAlt: "3D-LLDM Teaser",
+    title:    "3D-LLDM: LABEL-GUIDED 3D LATENT DIFFUSION MODEL FOR IMPROVING HIGH-RESOLUTION SYNTHETIC MR IMAGING IN HEPATIC STRUCTURE SEGMENTATION",
+    //titleUrl: "[TODO: paper URL or project page]",
+    authors: [
+      { name: "Kyeonghun Kim",    url: "https://khkim1729.github.io/" },
+      { name: "Jaehyeok Bae",     self: true },
+      { name: "Youngung Han"      },
+      { name: "Joo Young Bae"     },
+      { name: "Seoyoung Ju"       },
+      { name: "Junsu Lim"         },
+      { name: "Gyeongmin Kim"     },
+      { name: "Woo Kyoung Jeong"  },
+      { name: "Ken Ying-Kai Liao" },
+      { name: "Won Jae Lee"       },
+      { name: "Pa Hong"           },
+      { name: "Hyuk-Jae Lee"     },
+      { name: "Nam-Joon Kim"      },
+    ],
+    venue: "IEEE International Symposium on Biomedical Imaging (<strong>ISBI</strong>), 2026",
+    links: [
+      { text: "paper", url: "https://drive.google.com/file/d/1xkRsPYdMtohMSo2PlazyKIod5VUBrmzp/view?usp=drive_link" },
+      { text: "poster", url: "https://drive.google.com/file/d/1B_6aS6WusAKypgjm_G9DV-fsa87KOr6S/view?usp=drive_link" },
+      { text: "paper", url: "https://drive.google.com/file/d/12HSYnHWxrC2jb0AaG2YQxBC-9SwXvC6t/view?usp=drive_link" },
+    ],
+    bibtex: `@article{
+  title={3D-LLDM: LABEL-GUIDED 3D LATENT DIFFUSION MODEL FOR IMPROVING HIGH-RESOLUTION SYNTHETIC MR IMAGING IN HEPATIC STRUCTURE SEGMENTATION},
+  author={Kyeonghun Kim, Jaehyeok Bae, Youngung Han, Joo Young Bae, Seoyoung Ju, Junsu Lim, Gyeongmin Kim, Woo Kyoung Jeong, Ken Ying-Kai Liao, Won Jae Lee, Pa Hong, Hyuk-Jae Lee, Nam-Joon Kim†},
+  year={2026}
+}`,
+    description: [
+      "3D-LLDM generates anatomically consistent synthetic 3D MR volumes paired with segmentation masks by conditioning a latent diffusion model on structural labels via ControlNet. It directly addresses the shortage of annotated medical imaging data, enabling scalable augmentation that improves hepatic structure segmentation without requiring additional clinical scans.",
+    ],
+  },
+
+  {
+    image:    "assets/images/07_nstm/nstm_640.png",
     imageAlt: "NSTM Teaser",
     title:    "Neural Space-Time Modeling for Motion-Corrected MR Reconstruction",
     titleUrl: "https://link.springer.com/chapter/10.1007/978-3-032-06103-4_12",
@@ -57,7 +127,7 @@ const PAPERS = [
     ],
     venue: "International Workshop on Reconstruction and Imaging Motion Estimation at Medical Image Computing and Computer Assisted Intervention (<strong>MICCAI RIME</strong>), 2025",
     links: [
-      { text: "paper", url: "https://drive.google.com/file/d/1IPIKXB8L2kKoKulEprEatWYIRMk4F0l2/view?usp=drive_link" },
+      { text: "paper", url: "https://drive.google.com/file/d/1LSN4zLpjwvefbpdLZrDdpPfOiVo_oo3P/view?usp=drive_link" },
     ],
     bibtex: `@inproceedings{nurdinova2025neural,
   title        = {Neural Space-Time Modeling for Motion-Corrected MR Reconstruction},
@@ -68,12 +138,12 @@ const PAPERS = [
   organization = {Springer}
 }`,
     description: [
-      "NSTM introduces an unsupervised, navigator-free framework using Implicit Neural Representations to jointly learn and disentangle motion from image content without pre-training, enabling robust dynamic MRI reconstruction for complex free-breathing acquisitions directly from undersampled k-space data.",
+      "NSTM is an unsupervised, navigator-free framework that uses Implicit Neural Representations to jointly learn and disentangle motion from image content without pre-training. It enables robust dynamic MRI reconstruction for complex free-breathing acquisitions directly from undersampled k-space data.",
     ],
   },
 
   {
-    image:    "assets/images/03_adapsel/adapsel_320.png",
+    image:    "assets/images/03_adapsel/adapsel_640.png",
     imageAlt: "Adaptive Selection Teaser",
     title:    "Adaptive Selection of Sampling-Reconstruction in Fourier Compressed Sensing",
     titleUrl: "https://smhongok.github.io/ada-sel.html",
@@ -85,7 +155,7 @@ const PAPERS = [
     ],
     venue: "European Conference on Computer Vision (<strong>ECCV</strong>), 2024",
     links: [
-      { text: "paper",   url: "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08236.pdf" },
+      { text: "paper",   url: "https://drive.google.com/file/d/1DVP5FaxGT1a8FvMUmsI1DwCRgQqi-tzL/view?usp=drive_link" },
       { text: "arXiv",   url: "https://arxiv.org/abs/2409.11738" },
       { text: "project", url: "https://smhongok.github.io/ada-sel.html" },
       { text: "github",  url: "https://github.com/smhongok/ada-sel" },
@@ -99,12 +169,12 @@ const PAPERS = [
   organization = {Springer}
 }`,
     description: [
-      "Proposed a novel adaptive selection of sampling-reconstruction framework that selects the best sampling mask and reconstruction network for each input data in Fourier Compressed Sensing.",
+      "We proposed an adaptive selection framework for Fourier Compressed Sensing that jointly selects the best sampling mask and reconstruction network for each input sample.",
     ],
   },
 
   {
-    image:    "assets/images/04_pni/pni_320.png",
+    image:    "assets/images/04_pni/pni_640.png",
     imageAlt: "PNI Anomaly Detection Teaser",
     title:    "PNI : Industrial anomaly detection using position and neighborhood information",
     titleUrl: "https://openaccess.thecvf.com/content/ICCV2023/html/Bae_PNI__Industrial_Anomaly_Detection_using_Position_and_Neighborhood_Information_ICCV_2023_paper.html",
@@ -116,8 +186,8 @@ const PAPERS = [
     venue: "International Conference on Computer Vision (<strong>ICCV</strong>), 2023",
     links: [
       { text: "paper",  url: "https://openaccess.thecvf.com/content/ICCV2023/html/Bae_PNI__Industrial_Anomaly_Detection_using_Position_and_Neighborhood_Information_ICCV_2023_paper.html" },
-      { text: "video",  url: "https://drive.google.com/file/d/1gAKqNGhNr72A-16541fAw_A3jDkiB2oI/view?usp=drive_link" },
-      { text: "poster", url: "https://drive.google.com/file/d/1nyMVOhn7wFfPfBISoD5zziJUmIHGPdyY/view?usp=drive_link" },
+      { text: "video",  url: "https://drive.google.com/file/d/1creXCvdEgtzGm_iNBDNGn3ZEBU7TKtHZ/view?usp=drive_link" },
+      { text: "poster", url: "https://drive.google.com/file/d/1PFe6lIXVOhjEZ5nmziaxTcJX4TVqEmt7/view?usp=drive_link" },
       { text: "github", url: "https://github.com/wogur110/PNI_anomaly_detection" },
     ],
     bibtex: `@inproceedings{bae2023pni,
@@ -128,12 +198,12 @@ const PAPERS = [
   year      = {2023}
 }`,
     description: [
-      "Proposed a novel anomaly detection and localization alogrithm for industrial datasets, by training a normal feature distribution using position and neighborhood information of local features.",
+      "We proposed a novel anomaly detection and localization algorithm for industrial datasets that models a normal feature distribution using the position and neighborhood information of local features.",
     ],
   },
 
   {
-    image:    "assets/images/02_nimagenet/nimagenet_320.png",
+    image:    "assets/images/02_nimagenet/nimagenet_640.png",
     imageAlt: "N-ImageNet Teaser",
     title:    "N-ImageNet: Towards robust, fine-grained object recognition with event cameras",
     titleUrl: "https://82magnolia.github.io/n_imagenet/",
@@ -160,8 +230,7 @@ const PAPERS = [
   year      = {2021}
 }`,
     description: [
-      "Introduced N-ImageNet, a large-scale dataset targeted for robust, fine-grained object recognition with event cameras.",
-      "Empirically showed that pretraining on N-ImageNet improves the performance of event-based classifiers.",
+      "We introduced N-ImageNet, a large-scale dataset designed for robust, fine-grained object recognition with event cameras, and empirically demonstrated that pretraining on N-ImageNet improves the performance of event-based classifiers.",
     ],
   },
 ];
@@ -183,7 +252,7 @@ const PROJECTS = [
     venue: "<em>Electrical and Computer Engineering, Seoul National University</em>, 2022~2023",
     links: [
       { text: "homepage",                   url: "https://fastmri.snu.ac.kr/" },
-      { text: "ppt",                        url: "https://drive.google.com/file/d/1VXQu_P9zLPz2fmoryc2ZVyRncr1eoQdY/view?usp=drive_link" },
+      { text: "ppt",                        url: "https://drive.google.com/file/d/1HXNRqst3S_mMSr7fKdN_QehaPFzi3G4z/view?usp=drive_link" },
       { text: "video (<em>in Korean</em>)", url: "https://youtu.be/figDLtEMdaM" },
       { text: "github",                     url: "https://github.com/LISTatSNU/FastMRI_challenge" },
     ],

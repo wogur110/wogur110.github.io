@@ -84,7 +84,7 @@
         <hr>
 
         <!-- ── Publications ── -->
-        <h2>Publications</h2>
+        <h2>Publications (Selected) </h2>
         <p><small>* denotes equal contribution.</small></p>
         <div id="papers-div"></div>
 
@@ -114,6 +114,7 @@
         <!-- ── Honors and Awards ── -->
         <h2>Honors and Awards</h2>
         <ul>
+          <li><strong>Summa Cum Laude Merit Award</strong>, ISMRM Annual Meeting &mdash; 2026</li>
           <li><strong>Magna Cum Laude Merit Award</strong>, ISMRM Annual Meeting &mdash; 2025</li>
           <li><strong>2nd place</strong> in the 2022 SNU FastMRI Challenge, Seoul National University &mdash; 2022</li>
         </ul>
@@ -197,7 +198,9 @@
         <div class="paper-entry">
           <div class="paper-img">${imgEl}</div>
           <div class="paper-info">
-            <a href="${item.titleUrl}" target="_blank"><strong class="papertitle">${item.title}</strong></a><br>
+            ${item.titleUrl
+              ? `<a href="${item.titleUrl}" target="_blank"><strong class="papertitle">${item.title}</strong></a>`
+              : `<strong class="papertitle">${item.title}</strong>`}<br>
             ${authors}<br>
             <em>${item.venue}</em><br>
             ${links}${bibtexBtn}
