@@ -78,7 +78,7 @@ const PAPERS = [
   {
     image:    "assets/images/08_3d-lldm/3D-LLDM_640.png",
     imageAlt: "3D-LLDM Teaser",
-    title:    "3D-LLDM: LABEL-GUIDED 3D LATENT DIFFUSION MODEL FOR IMPROVING HIGH-RESOLUTION SYNTHETIC MR IMAGING IN HEPATIC STRUCTURE SEGMENTATION",
+    title:    "3D-LLDM: Label-Guided 3D Latent Diffusion Model for Improving High-Resolution Synthetic MR Imaging in Hepatic Structure Segmentation",
     //titleUrl: "[TODO: paper URL or project page]",
     authors: [
       { name: "Kyeonghun Kim",    url: "https://khkim1729.github.io/" },
