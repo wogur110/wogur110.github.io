@@ -247,10 +247,10 @@ const PROJECTS = [
     title:    "Story Bricks: Accessible Mixed-Reality Storytelling",
     titleUrl: "https://devpost.com/software/story-bricks",
     authors: [
-      { name: "Pratyush Raut" },
-      { name: "Alistar Qian Xiao" },
-      { name: "Jihyun Yu" },
       { name: "Jaehyeok Bae", self: true },
+      { name: "Pratyush Raut", url: "https://www.linkedin.com/in/pratyush-raut-7854681b0/" },
+      { name: "Alistar Qian Xiao", url: "https://www.linkedin.com/in/alistar-xiao-99697522b/" },
+      { name: "Jihyun Yu", url: "https://www.linkedin.com/in/jihyun-yu-50ab01427/" },
     ],
     venue: "Immerse the Bay, Stanford XR &mdash; Nov 13&ndash;15, 2026<br><strong>Virtuous Reality Winner (Best of Social Good and XR)</strong>",
     links: [
