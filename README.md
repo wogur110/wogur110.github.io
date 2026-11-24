@@ -24,6 +24,7 @@ if copying is unavailable, visitors can select and copy the citation manually.
 
 To add a publication, copy an entry in `PAPERS` and update its fields. Projects
 use the same format in `PROJECTS`; their section is hidden when the array is empty.
+The Project section appears between Work Experience and Honors and Awards.
 `titleUrl`, `imageFullUrl`, and `bibtex` are optional. Links and descriptions can
 be omitted or left as empty arrays. Author flags `self` and `equalContrib` control
 bold names and equal-contribution markers.
@@ -43,6 +44,13 @@ node --check assets/js/analytics.js
 ```
 
 ## Credits
+
+Story Bricks content is based on the team's [Devpost submission](https://devpost.com/software/story-bricks)
+and [GitHub repository](https://github.com/hyuntori2000/story-bricks/), with event dates
+and the award category checked against [Immerse the Bay 2026](https://immerse-the-bay-2026.devpost.com/).
+The thumbnail in `assets/images/story-bricks/story-bricks-demo.jpg` is the team's
+[Devpost demo screenshot](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/005/920/232/datas/gallery.jpg),
+showing a generated fox above the physical FOX bricks. Clicking it opens the full image.
 
 Originally based on [Jon Barron's academic website](https://jonbarron.info/),
 with the [orderedlist minimal theme](https://github.com/orderedlist/minimal).

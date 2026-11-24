@@ -240,6 +240,29 @@ const PAPERS = [
 // ─────────────────────────────────────────────────────────────────────────────
 
 const PROJECTS = [
+  {
+    image:        "assets/images/story-bricks/story-bricks-demo.jpg",
+    imageAlt:     "Story Bricks demo: a generated fox appears above physical LEGO Braille bricks spelling FOX",
+    imageFullUrl: "assets/images/story-bricks/story-bricks-demo.jpg",
+    title:    "Story Bricks: Accessible Mixed-Reality Storytelling",
+    titleUrl: "https://devpost.com/software/story-bricks",
+    authors: [
+      { name: "Pratyush Raut" },
+      { name: "Alistar Qian Xiao" },
+      { name: "Jihyun Yu" },
+      { name: "Jaehyeok Bae", self: true },
+    ],
+    venue: "Immerse the Bay, Stanford XR &mdash; Nov 13&ndash;15, 2026<br><strong>Virtuous Reality Winner (Best of Social Good and XR)</strong>",
+    links: [
+      { text: "project",   url: "https://devpost.com/software/story-bricks" },
+      { text: "github",    url: "https://github.com/hyuntori2000/story-bricks/" },
+      { text: "demo",      url: "https://www.youtube.com/watch?v=5X3WFSZtYvs" },
+      { text: "hackathon", url: "https://immersethebay.org/" },
+    ],
+    description: [
+      "Our team built a mixed-reality storytelling prototype on Meta Quest designed to help blind, low-vision, and sighted children create together. Children form words with LEGO Braille bricks and develop stories through spoken questions, while AI-generated illustrations, spatial sound effects, and narration bring their ideas to life.",
+    ],
+  },
   /* hidden: SNU FastMRI Challenge
   {
     image:        "assets/images/05_fastmri/fastmri_320.png",
