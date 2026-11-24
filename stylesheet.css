@@ -82,21 +82,21 @@ hr {
   margin: 0 auto;
 }
 
-/* ─── Sidebar (header) ─── */
+/* ─── Sidebar ─── */
 
-header {
+.site-header {
   width: 220px;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-header h1 {
+.site-header h1 {
   font-size: 20px;
   margin-bottom: 4px;
 }
 
-header > p {
+.site-header > p {
   font-size: 12px;
   color: #777;
   margin-bottom: 16px;
@@ -128,9 +128,9 @@ header > p {
 
 .contact-links a:hover { color: #39c; }
 
-/* ─── Main content (section) ─── */
+/* ─── Main content ─── */
 
-section {
+.site-content {
   width: 690px;
   float: right;
   padding-bottom: 60px;
@@ -138,7 +138,7 @@ section {
 
 /* ─── Footer ─── */
 
-footer {
+.site-footer {
   width: 220px;
   float: left;
   position: fixed;
@@ -148,9 +148,9 @@ footer {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-footer p { margin: 0; }
-footer a { color: #aaa; }
-footer a:hover { color: #39c; }
+.site-footer p { margin: 0; }
+.site-footer a { color: #aaa; }
+.site-footer a:hover { color: #39c; }
 
 /* ─── Date badge in h3 headings ─── */
 
@@ -207,7 +207,6 @@ footer a:hover { color: #39c; }
 .bibtex-toggle:hover { color: #069; }
 
 .bibtex-block {
-  display: none;
   position: relative;
   background: #f8f8f8;
   border: 1px solid #e5e5e5;
@@ -215,8 +214,6 @@ footer a:hover { color: #39c; }
   padding: 10px 40px 10px 12px;
   margin-top: 8px;
 }
-
-.bibtex-block.active { display: block; }
 
 .bibtex-block pre {
   font-size: 11px;
@@ -226,6 +223,7 @@ footer a:hover { color: #39c; }
   background: none;
   border: none;
   color: #333;
+  overflow-wrap: anywhere;
   overflow-x: visible;
 }
 
@@ -243,18 +241,18 @@ footer a:hover { color: #39c; }
 
 .bibtex-copy:hover { background: #f0f0f0; }
 
-/* ─── Responsive: tablet ─── */
+/* Stack before the 970px wrapper plus body padding exceeds the viewport. */
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 1100px) {
   .wrapper { width: auto; margin: 0; }
 
-  header, section, footer {
+  .site-header, .site-content, .site-footer {
     float: none;
     position: static;
     width: auto;
   }
 
-  header {
+  .site-header {
     text-align: center;
     margin-bottom: 24px;
     padding-bottom: 20px;
@@ -270,7 +268,7 @@ footer a:hover { color: #39c; }
     gap: 8px 16px;
   }
 
-  footer {
+  .site-footer {
     border-top: 1px solid #e5e5e5;
     padding-top: 12px;
     margin-top: 20px;
@@ -279,6 +277,14 @@ footer a:hover { color: #39c; }
 
   .date { float: none; display: block; }
 }
+
+.bibtex-status {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+}
+
+.bibtex-status:empty { display: none; }
 
 /* ─── Responsive: mobile ─── */
 
@@ -296,6 +302,6 @@ footer a:hover { color: #39c; }
 
 @media print {
   body { padding: 0.4in; font-size: 12pt; color: #444; }
-  header { position: static; }
-  footer { position: static; }
+  .site-header { position: static; }
+  .site-footer { position: static; }
 }

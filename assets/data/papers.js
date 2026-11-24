@@ -7,7 +7,9 @@
 //   { name: "Full Name", url: "https://..." }                → hyperlinked
 //   { name: "Full Name" }                                    → plain text
 //
-// description: array of strings, one string per bullet point.
+// description: array of strings, one string per paragraph.
+// venue, description, and links[].text support trusted, author-written HTML.
+// All other text fields are rendered as plain text.
 //
 // imageFullUrl (optional): if set, clicking the thumbnail opens the full image.
 //
